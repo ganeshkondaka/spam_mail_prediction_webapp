@@ -37,11 +37,10 @@ def main():
 
     col1,col2,col3=  st.columns([0.26, 0.3, 0.1])
 
-    with col2:
-        if st.button('mail result'):
-            final_result=spam_prediction([mail_text])
+    if st.button('mail result'):
+        final_result=spam_prediction([mail_text])
     
-        st.text(final_result)
+    st.text(final_result)
 
 
 
